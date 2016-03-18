@@ -14,6 +14,7 @@
 		07178E911C9C54A800F7A994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */; };
 		07178E9C1C9C54A800F7A994 /* TeamUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E9B1C9C54A800F7A994 /* TeamUpTests.swift */; };
 		07178EA71C9C54A800F7A994 /* TeamUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */; };
+		072DA0F61C9C5FDF00E2BBC7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DA0F51C9C5FDF00E2BBC7 /* Player.swift */; };
 		B46338637DE6579F08898A98 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FF830A5D749E0717575ABD /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		07178EA21C9C54A800F7A994 /* TeamUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUpUITests.swift; sourceTree = "<group>"; };
 		07178EA81C9C54A800F7A994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072DA0F51C9C5FDF00E2BBC7 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A7FF830A5D749E0717575ABD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C640E98B41125176183D33E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E7EEE88DF2EB6816FE36D8FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,11 +106,9 @@
 		07178E851C9C54A800F7A994 /* TeamUp */ = {
 			isa = PBXGroup;
 			children = (
-				07178E861C9C54A800F7A994 /* AppDelegate.swift */,
-				07178E881C9C54A800F7A994 /* ViewController.swift */,
-				07178E8A1C9C54A800F7A994 /* Main.storyboard */,
+				072DA0F11C9C5F4B00E2BBC7 /* UI */,
+				072DA0F41C9C5F9B00E2BBC7 /* Core Business */,
 				07178E8D1C9C54A800F7A994 /* Assets.xcassets */,
-				07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */,
 				07178E921C9C54A800F7A994 /* Info.plist */,
 			);
 			path = TeamUp;
@@ -130,6 +130,49 @@
 				07178EA81C9C54A800F7A994 /* Info.plist */,
 			);
 			path = TeamUpUITests;
+			sourceTree = "<group>";
+		};
+		072DA0F01C9C5F3F00E2BBC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				072DA0F51C9C5FDF00E2BBC7 /* Player.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		072DA0F11C9C5F4B00E2BBC7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				072DA0F31C9C5F8400E2BBC7 /* Application */,
+				072DA0F21C9C5F5200E2BBC7 /* ViewControllers */,
+				07178E8A1C9C54A800F7A994 /* Main.storyboard */,
+				07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		072DA0F21C9C5F5200E2BBC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				07178E881C9C54A800F7A994 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		072DA0F31C9C5F8400E2BBC7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				07178E861C9C54A800F7A994 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		072DA0F41C9C5F9B00E2BBC7 /* Core Business */ = {
+			isa = PBXGroup;
+			children = (
+				072DA0F01C9C5F3F00E2BBC7 /* Model */,
+			);
+			name = "Core Business";
 			sourceTree = "<group>";
 		};
 		8A9E09EF9BE31D619DD7B1E8 /* Pods */ = {
@@ -332,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07178E891C9C54A800F7A994 /* ViewController.swift in Sources */,
+				072DA0F61C9C5FDF00E2BBC7 /* Player.swift in Sources */,
 				07178E871C9C54A800F7A994 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
