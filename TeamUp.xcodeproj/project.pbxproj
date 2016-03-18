@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07178E871C9C54A800F7A994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E861C9C54A800F7A994 /* AppDelegate.swift */; };
+		07178E891C9C54A800F7A994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E881C9C54A800F7A994 /* ViewController.swift */; };
+		07178E8C1C9C54A800F7A994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8A1C9C54A800F7A994 /* Main.storyboard */; };
+		07178E8E1C9C54A800F7A994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8D1C9C54A800F7A994 /* Assets.xcassets */; };
+		07178E911C9C54A800F7A994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */; };
+		07178E9C1C9C54A800F7A994 /* TeamUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E9B1C9C54A800F7A994 /* TeamUpTests.swift */; };
+		07178EA71C9C54A800F7A994 /* TeamUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07178E981C9C54A800F7A994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07178E7B1C9C54A800F7A994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07178E821C9C54A800F7A994;
+			remoteInfo = TeamUp;
+		};
+		07178EA31C9C54A800F7A994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07178E7B1C9C54A800F7A994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07178E821C9C54A800F7A994;
+			remoteInfo = TeamUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07178E831C9C54A800F7A994 /* TeamUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07178E861C9C54A800F7A994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07178E881C9C54A800F7A994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07178E8B1C9C54A800F7A994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07178E8D1C9C54A800F7A994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07178E901C9C54A800F7A994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07178E921C9C54A800F7A994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07178E971C9C54A800F7A994 /* TeamUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07178E9B1C9C54A800F7A994 /* TeamUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUpTests.swift; sourceTree = "<group>"; };
+		07178E9D1C9C54A800F7A994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07178EA21C9C54A800F7A994 /* TeamUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUpUITests.swift; sourceTree = "<group>"; };
+		07178EA81C9C54A800F7A994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07178E801C9C54A800F7A994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07178E941C9C54A800F7A994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07178E9F1C9C54A800F7A994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07178E7A1C9C54A800F7A994 = {
+			isa = PBXGroup;
+			children = (
+				07178E851C9C54A800F7A994 /* TeamUp */,
+				07178E9A1C9C54A800F7A994 /* TeamUpTests */,
+				07178EA51C9C54A800F7A994 /* TeamUpUITests */,
+				07178E841C9C54A800F7A994 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07178E841C9C54A800F7A994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07178E831C9C54A800F7A994 /* TeamUp.app */,
+				07178E971C9C54A800F7A994 /* TeamUpTests.xctest */,
+				07178EA21C9C54A800F7A994 /* TeamUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07178E851C9C54A800F7A994 /* TeamUp */ = {
+			isa = PBXGroup;
+			children = (
+				07178E861C9C54A800F7A994 /* AppDelegate.swift */,
+				07178E881C9C54A800F7A994 /* ViewController.swift */,
+				07178E8A1C9C54A800F7A994 /* Main.storyboard */,
+				07178E8D1C9C54A800F7A994 /* Assets.xcassets */,
+				07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */,
+				07178E921C9C54A800F7A994 /* Info.plist */,
+			);
+			path = TeamUp;
+			sourceTree = "<group>";
+		};
+		07178E9A1C9C54A800F7A994 /* TeamUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				07178E9B1C9C54A800F7A994 /* TeamUpTests.swift */,
+				07178E9D1C9C54A800F7A994 /* Info.plist */,
+			);
+			path = TeamUpTests;
+			sourceTree = "<group>";
+		};
+		07178EA51C9C54A800F7A994 /* TeamUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */,
+				07178EA81C9C54A800F7A994 /* Info.plist */,
+			);
+			path = TeamUpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07178E821C9C54A800F7A994 /* TeamUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07178EAB1C9C54A800F7A994 /* Build configuration list for PBXNativeTarget "TeamUp" */;
+			buildPhases = (
+				07178E7F1C9C54A800F7A994 /* Sources */,
+				07178E801C9C54A800F7A994 /* Frameworks */,
+				07178E811C9C54A800F7A994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeamUp;
+			productName = TeamUp;
+			productReference = 07178E831C9C54A800F7A994 /* TeamUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07178E961C9C54A800F7A994 /* TeamUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07178EAE1C9C54A800F7A994 /* Build configuration list for PBXNativeTarget "TeamUpTests" */;
+			buildPhases = (
+				07178E931C9C54A800F7A994 /* Sources */,
+				07178E941C9C54A800F7A994 /* Frameworks */,
+				07178E951C9C54A800F7A994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07178E991C9C54A800F7A994 /* PBXTargetDependency */,
+			);
+			name = TeamUpTests;
+			productName = TeamUpTests;
+			productReference = 07178E971C9C54A800F7A994 /* TeamUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07178EA11C9C54A800F7A994 /* TeamUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07178EB11C9C54A800F7A994 /* Build configuration list for PBXNativeTarget "TeamUpUITests" */;
+			buildPhases = (
+				07178E9E1C9C54A800F7A994 /* Sources */,
+				07178E9F1C9C54A800F7A994 /* Frameworks */,
+				07178EA01C9C54A800F7A994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07178EA41C9C54A800F7A994 /* PBXTargetDependency */,
+			);
+			name = TeamUpUITests;
+			productName = TeamUpUITests;
+			productReference = 07178EA21C9C54A800F7A994 /* TeamUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07178E7B1C9C54A800F7A994 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = johan;
+				TargetAttributes = {
+					07178E821C9C54A800F7A994 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					07178E961C9C54A800F7A994 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 07178E821C9C54A800F7A994;
+					};
+					07178EA11C9C54A800F7A994 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 07178E821C9C54A800F7A994;
+					};
+				};
+			};
+			buildConfigurationList = 07178E7E1C9C54A800F7A994 /* Build configuration list for PBXProject "TeamUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07178E7A1C9C54A800F7A994;
+			productRefGroup = 07178E841C9C54A800F7A994 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07178E821C9C54A800F7A994 /* TeamUp */,
+				07178E961C9C54A800F7A994 /* TeamUpTests */,
+				07178EA11C9C54A800F7A994 /* TeamUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07178E811C9C54A800F7A994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07178E911C9C54A800F7A994 /* LaunchScreen.storyboard in Resources */,
+				07178E8E1C9C54A800F7A994 /* Assets.xcassets in Resources */,
+				07178E8C1C9C54A800F7A994 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07178E951C9C54A800F7A994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07178EA01C9C54A800F7A994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07178E7F1C9C54A800F7A994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07178E891C9C54A800F7A994 /* ViewController.swift in Sources */,
+				07178E871C9C54A800F7A994 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07178E931C9C54A800F7A994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07178E9C1C9C54A800F7A994 /* TeamUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07178E9E1C9C54A800F7A994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07178EA71C9C54A800F7A994 /* TeamUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07178E991C9C54A800F7A994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07178E821C9C54A800F7A994 /* TeamUp */;
+			targetProxy = 07178E981C9C54A800F7A994 /* PBXContainerItemProxy */;
+		};
+		07178EA41C9C54A800F7A994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07178E821C9C54A800F7A994 /* TeamUp */;
+			targetProxy = 07178EA31C9C54A800F7A994 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07178E8A1C9C54A800F7A994 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07178E8B1C9C54A800F7A994 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07178E901C9C54A800F7A994 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07178EA91C9C54A800F7A994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07178EAA1C9C54A800F7A994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07178EAC1C9C54A800F7A994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TeamUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.slickapps.TeamUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07178EAD1C9C54A800F7A994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TeamUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.slickapps.TeamUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07178EAF1C9C54A800F7A994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TeamUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.slickapps.TeamUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeamUp.app/TeamUp";
+			};
+			name = Debug;
+		};
+		07178EB01C9C54A800F7A994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TeamUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.slickapps.TeamUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeamUp.app/TeamUp";
+			};
+			name = Release;
+		};
+		07178EB21C9C54A800F7A994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TeamUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.slickapps.TeamUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TeamUp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		07178EB31C9C54A800F7A994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TeamUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.slickapps.TeamUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TeamUp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07178E7E1C9C54A800F7A994 /* Build configuration list for PBXProject "TeamUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07178EA91C9C54A800F7A994 /* Debug */,
+				07178EAA1C9C54A800F7A994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07178EAB1C9C54A800F7A994 /* Build configuration list for PBXNativeTarget "TeamUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07178EAC1C9C54A800F7A994 /* Debug */,
+				07178EAD1C9C54A800F7A994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07178EAE1C9C54A800F7A994 /* Build configuration list for PBXNativeTarget "TeamUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07178EAF1C9C54A800F7A994 /* Debug */,
+				07178EB01C9C54A800F7A994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07178EB11C9C54A800F7A994 /* Build configuration list for PBXNativeTarget "TeamUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07178EB21C9C54A800F7A994 /* Debug */,
+				07178EB31C9C54A800F7A994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07178E7B1C9C54A800F7A994 /* Project object */;
+}
