@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		07178E871C9C54A800F7A994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E861C9C54A800F7A994 /* AppDelegate.swift */; };
-		07178E891C9C54A800F7A994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E881C9C54A800F7A994 /* ViewController.swift */; };
+		07178E891C9C54A800F7A994 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E881C9C54A800F7A994 /* LoginViewController.swift */; };
 		07178E8C1C9C54A800F7A994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8A1C9C54A800F7A994 /* Main.storyboard */; };
 		07178E8E1C9C54A800F7A994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8D1C9C54A800F7A994 /* Assets.xcassets */; };
 		07178E911C9C54A800F7A994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07178E8F1C9C54A800F7A994 /* LaunchScreen.storyboard */; };
 		07178E9C1C9C54A800F7A994 /* TeamUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E9B1C9C54A800F7A994 /* TeamUpTests.swift */; };
 		07178EA71C9C54A800F7A994 /* TeamUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */; };
 		072DA0F61C9C5FDF00E2BBC7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DA0F51C9C5FDF00E2BBC7 /* Player.swift */; };
+		07484F461C9D4C7700CA9451 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07484F451C9D4C7700CA9451 /* Team.swift */; };
+		07484F481C9D4DD500CA9451 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07484F471C9D4DD500CA9451 /* Game.swift */; };
 		B46338637DE6579F08898A98 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FF830A5D749E0717575ABD /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		07178E831C9C54A800F7A994 /* TeamUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07178E861C9C54A800F7A994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07178E881C9C54A800F7A994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07178E881C9C54A800F7A994 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07178E8B1C9C54A800F7A994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07178E8D1C9C54A800F7A994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07178E901C9C54A800F7A994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUpUITests.swift; sourceTree = "<group>"; };
 		07178EA81C9C54A800F7A994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072DA0F51C9C5FDF00E2BBC7 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		07484F451C9D4C7700CA9451 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		07484F471C9D4DD500CA9451 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A7FF830A5D749E0717575ABD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C640E98B41125176183D33E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E7EEE88DF2EB6816FE36D8FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				072DA0F51C9C5FDF00E2BBC7 /* Player.swift */,
+				07484F451C9D4C7700CA9451 /* Team.swift */,
+				07484F471C9D4DD500CA9451 /* Game.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -154,7 +160,7 @@
 		072DA0F21C9C5F5200E2BBC7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				07178E881C9C54A800F7A994 /* ViewController.swift */,
+				07178E881C9C54A800F7A994 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -374,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07178E891C9C54A800F7A994 /* ViewController.swift in Sources */,
+				07484F461C9D4C7700CA9451 /* Team.swift in Sources */,
+				07484F481C9D4DD500CA9451 /* Game.swift in Sources */,
+				07178E891C9C54A800F7A994 /* LoginViewController.swift in Sources */,
 				072DA0F61C9C5FDF00E2BBC7 /* Player.swift in Sources */,
 				07178E871C9C54A800F7A994 /* AppDelegate.swift in Sources */,
 			);
