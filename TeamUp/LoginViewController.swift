@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
     
     //MARK: - Custom functions
     func verifyLogin(userName:String, password:String){
-        self.performSegueWithIdentifier(<#T##identifier: String##String#>, sender: <#T##AnyObject?#>)
+        //self.performSegueWithIdentifier()
     }
     
     

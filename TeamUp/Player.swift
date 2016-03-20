@@ -17,16 +17,18 @@ class Player {
     var position : String?
     var profilePic : String?
     var gamesPlayed : Int?
+    var barPoints : Int?
     
     
     //MARK: - Constructors
-    init(fName:String, lName:String, birthdate:NSDate, position:String, profilePic:String, gamesPlayed:Int){
+    init(fName:String, lName:String, birthdate:NSDate, position:String, profilePic:String, gamesPlayed:Int, barPoints:Int){
         self.fName = fName
         self.lName = lName
         self.birthdate = birthdate
         self.position = position
         self.profilePic = profilePic
         self.gamesPlayed = gamesPlayed
+        self.barPoints = barPoints
     }
     
     
