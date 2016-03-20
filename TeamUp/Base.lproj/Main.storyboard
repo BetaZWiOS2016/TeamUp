@@ -70,6 +70,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="mms-08-2vH" kind="show" id="e4x-GT-aWu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -351,6 +354,37 @@
             </objects>
             <point key="canvasLocation" x="1218" y="1624"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="FwE-wp-dBG">
+            <objects>
+                <viewController id="kwg-4P-rGx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bw-NL-jQ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="XdW-Kc-UFA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NeZ-nt-Xh1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhT-X1-HTr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BhT-X1-HTr" secondAttribute="trailing" id="1PK-sg-hOH"/>
+                            <constraint firstItem="XdW-Kc-UFA" firstAttribute="top" secondItem="BhT-X1-HTr" secondAttribute="bottom" id="3g8-p0-U3h"/>
+                            <constraint firstItem="BhT-X1-HTr" firstAttribute="leading" secondItem="NeZ-nt-Xh1" secondAttribute="leading" id="e62-wb-wio"/>
+                            <constraint firstItem="BhT-X1-HTr" firstAttribute="top" secondItem="0bw-NL-jQ0" secondAttribute="bottom" id="wkW-C2-nDC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="5t8-F8-Jge"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0X-jf-Ghg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="-440"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="wEn-HA-I8b">
             <objects>
@@ -564,24 +598,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK4-7Q-xFG">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.23165246210000001" green="0.23165246210000001" blue="0.23165246210000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Aanwezige spelers" id="56d-LG-4wa">
-                                        <barButtonItem key="leftBarButtonItem" title="Sluiten" id="1Js-Kv-6sC"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-OG-QDT">
-                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lej-fS-NHh">
-                                <rect key="frame" x="0.0" y="88" width="600" height="512"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lej-fS-NHh">
+                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="NiW-U4-Wh5">
@@ -725,43 +743,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-OG-QDT">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lqj-Jj-C7Q" firstAttribute="top" secondItem="lej-fS-NHh" secondAttribute="bottom" id="9XS-AK-vM5"/>
-                            <constraint firstItem="MK4-7Q-xFG" firstAttribute="top" secondItem="G6g-Ag-zK2" secondAttribute="topMargin" id="9e2-5N-jVa"/>
-                            <constraint firstItem="lej-fS-NHh" firstAttribute="leading" secondItem="MK4-7Q-xFG" secondAttribute="trailing" id="HdH-BY-M16"/>
+                            <constraint firstItem="HK0-OG-QDT" firstAttribute="top" secondItem="G6g-Ag-zK2" secondAttribute="top" constant="70" id="Hug-p5-LM2"/>
                             <constraint firstItem="lej-fS-NHh" firstAttribute="width" secondItem="G6g-Ag-zK2" secondAttribute="width" id="InA-JE-Yxw"/>
-                            <constraint firstItem="MK4-7Q-xFG" firstAttribute="top" secondItem="G6g-Ag-zK2" secondAttribute="top" id="LTR-sV-2cF"/>
-                            <constraint firstItem="MK4-7Q-xFG" firstAttribute="leading" secondItem="G6g-Ag-zK2" secondAttribute="leadingMargin" constant="-20" id="MLg-Fc-T84"/>
                             <constraint firstItem="HK0-OG-QDT" firstAttribute="width" secondItem="G6g-Ag-zK2" secondAttribute="width" id="QYP-JO-E2m"/>
                             <constraint firstItem="lej-fS-NHh" firstAttribute="height" secondItem="G6g-Ag-zK2" secondAttribute="height" multiplier="0.8" id="Tws-vG-5Oa"/>
                             <constraint firstItem="lej-fS-NHh" firstAttribute="top" secondItem="HK0-OG-QDT" secondAttribute="bottom" id="ULW-AK-z0L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MK4-7Q-xFG" secondAttribute="trailing" constant="-20" id="YNb-Q7-Tit"/>
-                            <constraint firstItem="HK0-OG-QDT" firstAttribute="top" secondItem="MK4-7Q-xFG" secondAttribute="bottom" id="Yn7-Wu-gjf"/>
+                            <constraint firstItem="HK0-OG-QDT" firstAttribute="top" secondItem="NcG-8W-xK0" secondAttribute="bottom" id="d9v-43-UwP"/>
                             <constraint firstItem="HK0-OG-QDT" firstAttribute="height" secondItem="G6g-Ag-zK2" secondAttribute="height" multiplier="0.1" id="gYt-n7-a51"/>
-                            <constraint firstItem="MK4-7Q-xFG" firstAttribute="centerX" secondItem="G6g-Ag-zK2" secondAttribute="centerX" id="ryQ-Oh-SEm"/>
-                            <constraint firstItem="MK4-7Q-xFG" firstAttribute="height" secondItem="G6g-Ag-zK2" secondAttribute="height" multiplier="0.1" id="sdi-oB-Ykm"/>
                             <constraint firstItem="Lqj-Jj-C7Q" firstAttribute="top" secondItem="lej-fS-NHh" secondAttribute="bottom" id="uWY-87-NT9"/>
                             <constraint firstItem="HK0-OG-QDT" firstAttribute="centerX" secondItem="G6g-Ag-zK2" secondAttribute="centerX" id="udJ-rR-UcR"/>
-                            <constraint firstItem="MK4-7Q-xFG" firstAttribute="width" secondItem="G6g-Ag-zK2" secondAttribute="width" id="ufg-ui-Zto"/>
                             <constraint firstItem="lej-fS-NHh" firstAttribute="top" secondItem="G6g-Ag-zK2" secondAttribute="topMargin" constant="80" id="wtc-8t-6gv"/>
                             <constraint firstAttribute="trailing" secondItem="lej-fS-NHh" secondAttribute="trailing" id="y2u-Aa-hzU"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="9e2-5N-jVa"/>
-                                <exclude reference="MLg-Fc-T84"/>
-                                <exclude reference="YNb-Q7-Tit"/>
-                                <exclude reference="sdi-oB-Ykm"/>
+                                <exclude reference="Hug-p5-LM2"/>
                                 <exclude reference="gYt-n7-a51"/>
-                                <exclude reference="HdH-BY-M16"/>
                                 <exclude reference="Tws-vG-5Oa"/>
                                 <exclude reference="wtc-8t-6gv"/>
                                 <exclude reference="9XS-AK-vM5"/>
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Rd-jb-HxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -780,6 +793,7 @@
                         <segue destination="mhn-aF-gFA" kind="relationship" relationship="viewControllers" id="w7s-PE-cv4"/>
                         <segue destination="M5w-ZF-XQX" kind="relationship" relationship="viewControllers" id="T98-55-3fJ"/>
                         <segue destination="fTH-7E-cjE" kind="relationship" relationship="viewControllers" id="iKa-G8-Ngt"/>
+                        <segue destination="kwg-4P-rGx" kind="relationship" relationship="viewControllers" id="qgy-9i-5O0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xd-8x-c9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -806,4 +820,7 @@
     <resources>
         <image name="ThumbnailLogo" width="128" height="160"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="e4x-GT-aWu"/>
+    </inferredMetricsTieBreakers>
 </document>
