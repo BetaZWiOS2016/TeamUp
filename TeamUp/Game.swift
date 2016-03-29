@@ -16,25 +16,30 @@ class Game {
     var awayTeam:Team?
     var homeTeamScore:Int?
     var awayTeamScore:Int?
+    var namePitch:String?
+    var nameBar:String?
     var addressPitch:String?
     var addressBar:String?
-    var hourPitch:String?
-    var hourWP:String?
-    var hourStart:String?
+    var pitchTime:String?
+    var wpTime:String?
+    var kickOffTime:String?
     var playersConfirmed:[Player]?
     
     
     //MARK: - Ctor
-    init(homeTeam:Team, awayTeam:Team, homeTeamScore:Int, awayTeamScore:Int, addressPitch:String, addressBar:String, hourPitch:String, hourWP:String, hourStart:String, playersConfirmed:[Player]){
+    init(homeTeam:Team, awayTeam:Team, homeTeamScore:Int, awayTeamScore:Int, addressPitch:String, addressBar:String, pitchTime:String, wpTime:String, kickOffTime:String, playersConfirmed:[Player]){
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam
         self.homeTeamScore = homeTeamScore
         self.awayTeamScore = awayTeamScore
         self.addressPitch = homeTeam.addressPitch
         self.addressBar = homeTeam.addressBar
-        self.hourPitch = hourPitch
-        self.hourStart = hourStart
-        self.hourWP = hourWP
+        self.nameBar = homeTeam.barName
+        self.namePitch = homeTeam.pitchName
+        self.pitchTime = pitchTime
+        self.kickOffTime = homeTeam.kickOffTime
+        self.wpTime = wpTime
+        self.playersConfirmed = playersConfirmed
     }
     
     

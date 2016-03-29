@@ -18,10 +18,11 @@ class Player {
     var profilePic : String?
     var gamesPlayed : Int?
     var barPoints : Int?
+    var phone : String?
     
     
     //MARK: - Constructors
-    init(fName:String, lName:String, birthdate:NSDate, position:String, profilePic:String, gamesPlayed:Int, barPoints:Int){
+    init(fName:String, lName:String, birthdate:NSDate, position:String, profilePic:String, gamesPlayed:Int, barPoints:Int, phone:String){
         self.fName = fName
         self.lName = lName
         self.birthdate = birthdate
@@ -29,6 +30,7 @@ class Player {
         self.profilePic = profilePic
         self.gamesPlayed = gamesPlayed
         self.barPoints = barPoints
+        self.phone = phone
     }
     
     
