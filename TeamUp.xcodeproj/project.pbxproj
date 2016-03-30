@@ -15,6 +15,9 @@
 		07178E9C1C9C54A800F7A994 /* TeamUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178E9B1C9C54A800F7A994 /* TeamUpTests.swift */; };
 		07178EA71C9C54A800F7A994 /* TeamUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */; };
 		072DA0F61C9C5FDF00E2BBC7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DA0F51C9C5FDF00E2BBC7 /* Player.swift */; };
+		073A57531CAC0AEF00759E3B /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A57521CAC0AEF00759E3B /* GameTableViewCell.swift */; };
+		073A57551CAC0B1800759E3B /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A57541CAC0B1800759E3B /* PlayerTableViewCell.swift */; };
+		073A57571CAC0B6D00759E3B /* TrainingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A57561CAC0B6D00759E3B /* TrainingTableViewCell.swift */; };
 		07484F461C9D4C7700CA9451 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07484F451C9D4C7700CA9451 /* Team.swift */; };
 		07484F481C9D4DD500CA9451 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07484F471C9D4DD500CA9451 /* Game.swift */; };
 		07614E4B1CABD1A900A3CE1F /* SelectedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07614E4A1CABD1A900A3CE1F /* SelectedGameViewController.swift */; };
@@ -63,6 +66,9 @@
 		07178EA61C9C54A800F7A994 /* TeamUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUpUITests.swift; sourceTree = "<group>"; };
 		07178EA81C9C54A800F7A994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072DA0F51C9C5FDF00E2BBC7 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		073A57521CAC0AEF00759E3B /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		073A57541CAC0B1800759E3B /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		073A57561CAC0B6D00759E3B /* TrainingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingTableViewCell.swift; sourceTree = "<group>"; };
 		07484F451C9D4C7700CA9451 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		07484F471C9D4DD500CA9451 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		07614E4A1CABD1A900A3CE1F /* SelectedGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedGameViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 				07C0CA6A1CAAB3F80078D24B /* HomePageWebViewController.swift */,
 				07C0CA6C1CAAB5560078D24B /* PlayerProfileViewController.swift */,
 				07614E4A1CABD1A900A3CE1F /* SelectedGameViewController.swift */,
+				073A57521CAC0AEF00759E3B /* GameTableViewCell.swift */,
+				073A57541CAC0B1800759E3B /* PlayerTableViewCell.swift */,
+				073A57561CAC0B6D00759E3B /* TrainingTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -415,9 +424,12 @@
 			files = (
 				07C0CA5F1CAAB17F0078D24B /* MainUIPageViewController.swift in Sources */,
 				07C0CA5D1CAAABAD0078D24B /* Training.swift in Sources */,
+				073A57571CAC0B6D00759E3B /* TrainingTableViewCell.swift in Sources */,
 				07C0CA5B1CAAA4190078D24B /* Datasource.swift in Sources */,
 				07484F461C9D4C7700CA9451 /* Team.swift in Sources */,
 				07C0CA631CAAB31F0078D24B /* GamesViewController.swift in Sources */,
+				073A57531CAC0AEF00759E3B /* GameTableViewCell.swift in Sources */,
+				073A57551CAC0B1800759E3B /* PlayerTableViewCell.swift in Sources */,
 				07484F481C9D4DD500CA9451 /* Game.swift in Sources */,
 				07C0CA671CAAB33C0078D24B /* TrainingViewController.swift in Sources */,
 				07C0CA691CAAB3E80078D24B /* RankingWebViewController.swift in Sources */,

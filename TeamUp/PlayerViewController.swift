@@ -8,11 +8,15 @@
 
 import UIKit
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +24,25 @@ class PlayerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    //MARK : - TableView
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell")! as! PlayerTableViewCell
+        cell.configureCell()
+        return cell
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    
     
 
     /*

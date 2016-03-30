@@ -10,6 +10,12 @@ import UIKit
 
 class HomePageWebViewController: UIViewController {
 
+    
+    //MARK: - IBOutlets
+    
+    @IBOutlet weak var myWebView: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +24,9 @@ class HomePageWebViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        let url = NSURL (string: "http://www.kvdv.be");
+        let requestObj = NSURLRequest(URL: url!);
+        myWebView.loadRequest(requestObj);
         // Dispose of any resources that can be recreated.
     }
     

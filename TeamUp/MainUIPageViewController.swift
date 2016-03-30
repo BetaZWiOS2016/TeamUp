@@ -27,36 +27,38 @@ class MainUIPageViewController: UIViewController {
         // Make sure the title property of all view controllers is set
         // Example:
         let nextGameVC = (storyboard!.instantiateViewControllerWithIdentifier("NextGameViewController")) as! NextGameViewController
-        nextGameVC.title = "Volgende wedstrijd"
+        nextGameVC.title = "Volg wedstrijd"
         controllerArray.append(nextGameVC)
         
         let gamesVC  = (storyboard!.instantiateViewControllerWithIdentifier("GamesViewController")) as! GamesViewController
-        gamesVC.title = "Wedstrijden"
+        gamesVC.title = "Kalender"
         controllerArray.append(gamesVC)
         
         let playerVC = (storyboard!.instantiateViewControllerWithIdentifier("PlayerViewController")) as! PlayerViewController
-        gamesVC.title = "Spelers"
+        playerVC.title = "Spelers"
         controllerArray.append(playerVC)
         
         let trainingVC = (storyboard!.instantiateViewControllerWithIdentifier("TrainingViewController")) as! TrainingViewController
-        gamesVC.title = "Training"
+        trainingVC.title = "Trainingen"
         controllerArray.append(trainingVC)
         
         let rankingVC = (storyboard!.instantiateViewControllerWithIdentifier("RankingWebViewController")) as! RankingWebViewController
-        gamesVC.title = "Rangschikking"
+        rankingVC.title = "Rangschikking"
         controllerArray.append(rankingVC)
         
         let homepageVC = (storyboard!.instantiateViewControllerWithIdentifier("HomePageWebViewController")) as! HomePageWebViewController
-        gamesVC.title = "Homepage"
+        homepageVC.title = "Homepage"
         controllerArray.append(homepageVC)
         
         
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
         var parameters: [CAPSPageMenuOption] = [
-            .MenuItemSeparatorWidth(4.3),
-            .UseMenuLikeSegmentedControl(true),
-            .MenuItemSeparatorPercentageHeight(0.1)
+            .MenuItemSeparatorWidth(1),
+            .UseMenuLikeSegmentedControl(false),
+            .MenuItemSeparatorPercentageHeight(0.5)
+            
+            
         ]
         
         // Initialize page menu with controller array, frame, and optional parameters

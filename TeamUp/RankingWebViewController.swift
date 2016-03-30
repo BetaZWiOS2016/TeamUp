@@ -10,6 +10,11 @@ import UIKit
 
 class RankingWebViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    
+    @IBOutlet weak var myWebView: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +23,9 @@ class RankingWebViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        let url = NSURL (string: "http://kvdv.be/xml/zat1.xml");
+        let requestObj = NSURLRequest(URL: url!);
+        myWebView.loadRequest(requestObj);
         // Dispose of any resources that can be recreated.
     }
     
