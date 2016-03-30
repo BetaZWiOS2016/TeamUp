@@ -26,10 +26,29 @@ class MainUIPageViewController: UIViewController {
         // (Can be any UIViewController subclass)
         // Make sure the title property of all view controllers is set
         // Example:
-        let nextGameVC : UIViewController = UIViewController(nibName: "nextGameViewController", bundle: nil)
+        let nextGameVC = (storyboard!.instantiateViewControllerWithIdentifier("NextGameViewController")) as! NextGameViewController
         nextGameVC.title = "Volgende wedstrijd"
         controllerArray.append(nextGameVC)
         
+        let gamesVC  = (storyboard!.instantiateViewControllerWithIdentifier("GamesViewController")) as! GamesViewController
+        gamesVC.title = "Wedstrijden"
+        controllerArray.append(gamesVC)
+        
+        let playerVC = (storyboard!.instantiateViewControllerWithIdentifier("PlayerViewController")) as! PlayerViewController
+        gamesVC.title = "Spelers"
+        controllerArray.append(playerVC)
+        
+        let trainingVC = (storyboard!.instantiateViewControllerWithIdentifier("TrainingViewController")) as! TrainingViewController
+        gamesVC.title = "Training"
+        controllerArray.append(trainingVC)
+        
+        let rankingVC = (storyboard!.instantiateViewControllerWithIdentifier("RankingWebViewController")) as! RankingWebViewController
+        gamesVC.title = "Rangschikking"
+        controllerArray.append(rankingVC)
+        
+        let homepageVC = (storyboard!.instantiateViewControllerWithIdentifier("HomePageWebViewController")) as! HomePageWebViewController
+        gamesVC.title = "Homepage"
+        controllerArray.append(homepageVC)
         
         
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
