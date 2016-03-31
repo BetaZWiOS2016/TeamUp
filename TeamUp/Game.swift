@@ -42,5 +42,7 @@ class Game {
         self.playersConfirmed = playersConfirmed
     }
     
+    init(){}
+    
     
 }

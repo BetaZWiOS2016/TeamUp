@@ -20,7 +20,7 @@ class MainUIPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var controllerArray : [UIViewController] = []
-        
+        TeamAppController.sharedInstance.fillGames()
         // Create variables for all view controllers you want to put in the
         // page menu, initialize them, and add each to the controller array.
         // (Can be any UIViewController subclass)

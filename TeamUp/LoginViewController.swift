@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let user = TeamAppController.sharedInstance.userLogged
     }
     
     override func viewWillAppear(animated: Bool) {

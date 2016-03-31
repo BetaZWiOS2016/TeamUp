@@ -1189,19 +1189,19 @@
                                     <mask key="constraints">
                                         <exclude reference="54E-RW-sMy"/>
                                         <exclude reference="sCF-sE-SP9"/>
-                                        <exclude reference="TQM-Wo-Z8O"/>
-                                        <exclude reference="ny2-NH-qWe"/>
                                         <exclude reference="dQP-3q-k62"/>
+                                        <exclude reference="ERb-fk-UfP"/>
                                         <exclude reference="462-kb-Xgg"/>
                                         <exclude reference="ncT-1V-guV"/>
                                         <exclude reference="rig-bU-Rqp"/>
                                         <exclude reference="y9W-0l-6n8"/>
-                                        <exclude reference="ERb-fk-UfP"/>
                                         <exclude reference="19V-Ek-hZz"/>
                                         <exclude reference="sNx-QY-w9G"/>
                                         <exclude reference="34o-Dm-oI4"/>
                                         <exclude reference="7Bi-DD-ECS"/>
                                         <exclude reference="PCA-vO-wIh"/>
+                                        <exclude reference="TQM-Wo-Z8O"/>
+                                        <exclude reference="ny2-NH-qWe"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -2199,12 +2199,62 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9hV-gk-9EM"/>
+                        <segue destination="fuX-6p-C9F" kind="relationship" relationship="rootViewController" id="WOE-0p-xtE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOw-uC-1Sw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1010" y="549"/>
+            <point key="canvasLocation" x="-1850" y="287"/>
+        </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="m4E-7F-5eU">
+            <objects>
+                <viewController id="fuX-6p-C9F" customClass="SplashScreenViewController" customModule="TeamUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Arx-oD-GSO"/>
+                        <viewControllerLayoutGuide type="bottom" id="1iK-aQ-ECr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C3k-aM-65F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThumbnailLogo" translatesAutoresizingMaskIntoConstraints="NO" id="t7D-xk-8ry">
+                                <rect key="frame" x="236" y="220" width="128" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="g7h-oE-pdr"/>
+                                    <constraint firstAttribute="width" constant="128" id="gjY-hb-QZl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="tzO-NL-F3W"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="yau-Er-F27"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tzO-NL-F3W"/>
+                                        <exclude reference="yau-Er-F27"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yIi-GU-zIv">
+                                <rect key="frame" x="282" y="388" width="37" height="37"/>
+                                <color key="color" red="0.23165246210000001" green="0.23165246210000001" blue="0.23165246210000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t7D-xk-8ry" firstAttribute="centerX" secondItem="C3k-aM-65F" secondAttribute="centerX" id="56Y-bR-dag"/>
+                            <constraint firstItem="t7D-xk-8ry" firstAttribute="centerY" secondItem="C3k-aM-65F" secondAttribute="centerY" id="dk1-GV-xk7"/>
+                            <constraint firstItem="yIi-GU-zIv" firstAttribute="top" secondItem="t7D-xk-8ry" secondAttribute="bottom" constant="8" id="mZy-i6-E86"/>
+                            <constraint firstItem="yIi-GU-zIv" firstAttribute="centerX" secondItem="C3k-aM-65F" secondAttribute="centerX" id="xkC-KQ-fx2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ROd-YF-8QX"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="needLoginSegue" id="O9l-BD-VAl"/>
+                        <segue destination="aCk-er-Rg4" kind="show" identifier="alreadyLoggedSegue" id="uEX-Ng-aon"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nd-96-0pS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1160" y="256"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jpw-YU-bMZ">
@@ -2228,4 +2278,7 @@
     <resources>
         <image name="ThumbnailLogo" width="30" height="38"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uEX-Ng-aon"/>
+    </inferredMetricsTieBreakers>
 </document>

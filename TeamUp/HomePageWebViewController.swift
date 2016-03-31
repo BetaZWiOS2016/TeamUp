@@ -18,15 +18,16 @@ class HomePageWebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let url = NSURL (string: "http://www.kvdv.be");
+        let requestObj = NSURLRequest(URL: url!);
+        myWebView.loadRequest(requestObj);
 
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        let url = NSURL (string: "http://www.kvdv.be");
-        let requestObj = NSURLRequest(URL: url!);
-        myWebView.loadRequest(requestObj);
+       
         // Dispose of any resources that can be recreated.
     }
     

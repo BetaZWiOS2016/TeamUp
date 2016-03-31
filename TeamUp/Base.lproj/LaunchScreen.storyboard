@@ -16,7 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThumbnailLogo" translatesAutoresizingMaskIntoConstraints="NO" id="579-fY-PA1">
+                                <rect key="frame" x="236" y="220" width="128" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="68g-yQ-EBL"/>
+                                    <constraint firstAttribute="height" constant="160" id="F3p-7p-1sb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="QVs-6u-kni"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="hdj-Bw-HEP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QVs-6u-kni"/>
+                                        <exclude reference="hdj-Bw-HEP"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="579-fY-PA1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eft-Mc-uBC"/>
+                            <constraint firstItem="579-fY-PA1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g7G-uI-DCA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +45,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ThumbnailLogo" width="30" height="38"/>
+    </resources>
 </document>
