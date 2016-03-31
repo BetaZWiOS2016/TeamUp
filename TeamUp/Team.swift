@@ -40,6 +40,8 @@ class Team {
         self.kickOffTime = kickOffTime
     }
     
+    init(){}
+    
     
     //MARK: - Custom Functions
     

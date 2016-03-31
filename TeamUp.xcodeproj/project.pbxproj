@@ -22,6 +22,7 @@
 		07484F481C9D4DD500CA9451 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07484F471C9D4DD500CA9451 /* Game.swift */; };
 		075635941CAD18FA00147375 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075635931CAD18FA00147375 /* SplashScreenViewController.swift */; };
 		07614E4B1CABD1A900A3CE1F /* SelectedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07614E4A1CABD1A900A3CE1F /* SelectedGameViewController.swift */; };
+		07BA57A01CAD726800031984 /* NSDate+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA579F1CAD726800031984 /* NSDate+Utils.swift */; };
 		07C0CA5B1CAAA4190078D24B /* TeamAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0CA5A1CAAA4190078D24B /* TeamAppController.swift */; };
 		07C0CA5D1CAAABAD0078D24B /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0CA5C1CAAABAD0078D24B /* Training.swift */; };
 		07C0CA5F1CAAB17F0078D24B /* MainUIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0CA5E1CAAB17F0078D24B /* MainUIPageViewController.swift */; };
@@ -74,6 +75,7 @@
 		07484F471C9D4DD500CA9451 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		075635931CAD18FA00147375 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		07614E4A1CABD1A900A3CE1F /* SelectedGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedGameViewController.swift; sourceTree = "<group>"; };
+		07BA579F1CAD726800031984 /* NSDate+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Utils.swift"; sourceTree = "<group>"; };
 		07C0CA5A1CAAA4190078D24B /* TeamAppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamAppController.swift; sourceTree = "<group>"; };
 		07C0CA5C1CAAABAD0078D24B /* Training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		07C0CA5E1CAAB17F0078D24B /* MainUIPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUIPageViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				072DA0F01C9C5F3F00E2BBC7 /* Model */,
+				07BA579F1CAD726800031984 /* NSDate+Utils.swift */,
 			);
 			name = "Core Business";
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C0CA5F1CAAB17F0078D24B /* MainUIPageViewController.swift in Sources */,
+				07BA57A01CAD726800031984 /* NSDate+Utils.swift in Sources */,
 				07C0CA5D1CAAABAD0078D24B /* Training.swift in Sources */,
 				073A57571CAC0B6D00759E3B /* TrainingTableViewCell.swift in Sources */,
 				07C0CA5B1CAAA4190078D24B /* TeamAppController.swift in Sources */,

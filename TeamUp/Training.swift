@@ -18,9 +18,9 @@ class Training: NSObject {
     
     
     //MARK: - Ctor
-    init(date:NSDate, day:String, playersConfirmed:[Player]){
+    init(date:NSDate, day:String){
         self.date = date
         self.day = day
-        self.playersConfirmed = playersConfirmed
+        
     }
 }

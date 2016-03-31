@@ -1364,6 +1364,24 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="aanwezigBtn" destination="M3H-LH-thD" id="hzB-bv-3Ko"/>
+                        <outlet property="adresCafeLbl" destination="nLe-gO-vay" id="xfj-S0-qvz"/>
+                        <outlet property="adresVeldLbl" destination="klX-l2-gGc" id="Xbc-j2-aye"/>
+                        <outlet property="awayTeamImage" destination="QfN-rz-UdG" id="FyY-zU-IwH"/>
+                        <outlet property="awayTeamNameLbl" destination="Eop-u3-YXf" id="LTu-Z9-IDd"/>
+                        <outlet property="awayTeamScoreLbl" destination="ZAc-KE-Be9" id="8lN-oa-LvS"/>
+                        <outlet property="cafeNaamLbl" destination="r7p-us-HZy" id="gbo-xX-f5a"/>
+                        <outlet property="dateTimeLbl" destination="5mr-VF-i3O" id="QqD-Ar-yiE"/>
+                        <outlet property="homeTeamImage" destination="odA-Bf-yIl" id="bdl-iN-UWn"/>
+                        <outlet property="homeTeamNameLbl" destination="44D-fc-2YG" id="7pr-VK-oLj"/>
+                        <outlet property="homeTeamScoreLbl" destination="ahZ-3F-Ump" id="f8W-yT-Kr8"/>
+                        <outlet property="spelersBtn" destination="u5I-ou-XMV" id="oOG-Jg-xHS"/>
+                        <outlet property="uurAftrapLbl" destination="DVZ-ep-cRf" id="bob-ia-tR4"/>
+                        <outlet property="uurVeldLbl" destination="qc5-2u-c6t" id="kBY-VP-z8I"/>
+                        <outlet property="uurWPLbl" destination="igb-hb-WTl" id="sdU-NJ-WEK"/>
+                        <outlet property="veldNaamLbl" destination="cr8-Ld-Oh9" id="dm0-Hy-2JQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJ2-e2-qrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

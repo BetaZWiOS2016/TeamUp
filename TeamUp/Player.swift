@@ -22,12 +22,11 @@ class Player {
     
     
     //MARK: - Constructors
-    init(fName:String, lName:String, birthdate:NSDate, position:String, profilePic:String, gamesPlayed:Int, barPoints:Int, phone:String){
+    init(fName:String, lName:String, birthdate:NSDate, position:String, gamesPlayed:Int, barPoints:Int, phone:String){
         self.fName = fName
         self.lName = lName
         self.birthdate = birthdate
         self.position = position
-        self.profilePic = profilePic
         self.gamesPlayed = gamesPlayed
         self.barPoints = barPoints
         self.phone = phone

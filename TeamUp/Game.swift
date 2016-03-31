@@ -14,6 +14,7 @@ class Game {
     //MARK: - Attributes
     var homeTeam:Team?
     var awayTeam:Team?
+    var matchDay:NSDate?
     var homeTeamScore:Int?
     var awayTeamScore:Int?
     var namePitch:String?
@@ -27,7 +28,7 @@ class Game {
     
     
     //MARK: - Ctor
-    init(homeTeam:Team, awayTeam:Team, homeTeamScore:Int, awayTeamScore:Int, addressPitch:String, addressBar:String, pitchTime:String, wpTime:String, kickOffTime:String, playersConfirmed:[Player]){
+    init(homeTeam:Team, awayTeam:Team, homeTeamScore:Int, awayTeamScore:Int, addressPitch:String, addressBar:String, pitchTime:String, wpTime:String, kickOffTime:String, matchDay:NSDate){
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam
         self.homeTeamScore = homeTeamScore
@@ -39,7 +40,8 @@ class Game {
         self.pitchTime = pitchTime
         self.kickOffTime = homeTeam.kickOffTime
         self.wpTime = wpTime
-        self.playersConfirmed = playersConfirmed
+        self.matchDay = matchDay
+        
     }
     
     init(){}
