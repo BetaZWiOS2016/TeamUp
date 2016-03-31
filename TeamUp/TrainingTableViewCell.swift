@@ -15,6 +15,7 @@ class TrainingTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var confirmationBtn: UIButton!
     @IBOutlet weak var playersBtn: UIButton!
+    @IBOutlet weak var dayLbl: UILabel!
     
     
     

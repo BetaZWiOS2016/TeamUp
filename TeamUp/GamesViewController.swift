@@ -13,7 +13,9 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     //MARK: - IBOutlets
     
+  
     @IBOutlet weak var tableView: UITableView!
+
     
     //MARK : - LifeCycle
     override func viewDidLoad() {
@@ -36,7 +38,7 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("GameCell")! as! GameTableViewCell
-        cell.configureCell()
+        //cell.configureCell()
         return cell
         
     }
@@ -46,14 +48,17 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
 
-    /*
+  
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "showGameSegue"){
+                let selectedGameVC = segue.destinationViewController as! SelectedGameViewController
+                if let game = sender as? Game{
+                    selectedGameVC.selectedGame = game
+                }
+        }
     }
-    */
+
 
 }

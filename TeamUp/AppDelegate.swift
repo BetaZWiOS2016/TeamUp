@@ -22,7 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: - AppDelegate Methods
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+        TeamAppController.sharedInstance.fillTeams()
+        TeamAppController.sharedInstance.fillPlayers()
+        TeamAppController.sharedInstance.fillTrainings()
+        TeamAppController.sharedInstance.fillGames()
+        print("Games")
+        print(TeamAppController.sharedInstance.games)
         // Override point for customization after application launch.
         return true
     }

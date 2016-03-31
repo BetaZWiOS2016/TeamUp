@@ -14,6 +14,16 @@ class TrainingViewController: UIViewController, UITableViewDataSource, UITableVi
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var hour1Lbl: UILabel!
+    @IBOutlet weak var day2Lbl: UILabel!
+    @IBOutlet weak var day1Lbl: UILabel!
+    @IBOutlet weak var date1Lbl: UILabel!
+    @IBOutlet weak var date2Lbl: UILabel!
+    @IBOutlet weak var hour2Lbl: UIView!
+    @IBOutlet weak var aanwezig1Btn: UIButton!
+    @IBOutlet weak var spelers1Btn: UIButton!
+    @IBOutlet weak var aanwezig2Btn: UIButton!
+    @IBOutlet weak var spelers2Btn: UIButton!
     
     
     

@@ -23,6 +23,7 @@ class Team {
     var pitchName:String?
     var barName:String?
     var kickOffTime:String?
+    var image:String?
     
     
     //MARK: - Ctor

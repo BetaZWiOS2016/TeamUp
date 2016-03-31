@@ -36,6 +36,7 @@ class NextGameViewController: UIViewController {
         super.viewDidLoad()
         setCurrentGame()
         configureViews(TeamAppController.sharedInstance.nextGame)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -50,7 +51,7 @@ class NextGameViewController: UIViewController {
         let today = NSDate()
         var date = NSDate(timeIntervalSinceNow: -300*24*60*60)
         for (_, game) in TeamAppController.sharedInstance.games{
-        
+            
             if game.matchDay == nil ? true : game.matchDay!.isGreaterThanDate(today) {
                 print("")
             }
@@ -59,8 +60,7 @@ class NextGameViewController: UIViewController {
                 date = game.matchDay!
             }
         }
-        //print ("NextGame = ")
-        //print((TeamAppController.sharedInstance.nextGame.homeTeam?.name)!)
+        
     }
     
     

@@ -10,6 +10,20 @@ import UIKit
 
 class PlayerProfileViewController: UIViewController {
 
+    
+    //MARK: - IBOutlets
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var fNameLbl: UILabel!
+    @IBOutlet weak var lNameLbl: UILabel!
+    @IBOutlet weak var birthdateLbl: UILabel!
+    @IBOutlet weak var positionLbl: UILabel!
+    @IBOutlet weak var gamesLbl: UILabel!
+    @IBOutlet weak var wpLbl: UILabel!
+    @IBOutlet weak var phoneLbl: UILabel!
+    @IBOutlet weak var callBtn: UIButton!
+    @IBOutlet weak var chatBtn: UIButton!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

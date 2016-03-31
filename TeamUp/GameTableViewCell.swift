@@ -38,14 +38,14 @@ class GameTableViewCell: UITableViewCell {
     
     
     //MARK: - Custom Methods
-    func configureCell(){
-        self.dateLbl.text = "23/04/16 - 14u30"
-        self.homeTeamLbl.text = "FC Kliefhamers"
-        self.awayTeamLbl.text = "FC Konijnenberg"
-        self.homeTeamScoreLbl.text = "2"
-        self.awayTeamScoreLbl.text = "0"
-        self.homeTeamImage.image = UIImage(named: "ThumbnailLogo")
-        self.awayTeamImage.image = UIImage(named: "AwayTeamLogo")
+    func configureCell(game:Game){
+        self.dateLbl.text = game.matchDay?.description
+        self.homeTeamLbl.text = game.homeTeam?.name
+        self.awayTeamLbl.text = game.awayTeam?.name
+        self.homeTeamScoreLbl.text = game.homeTeamScore?.description
+        self.awayTeamScoreLbl.text = game.awayTeamScore?.description
+        self.homeTeamImage.image = UIImage(named: (game.homeTeam?.image)!)
+        self.awayTeamImage.image = UIImage(named: (game.awayTeam?.image)!)
         
     }
 

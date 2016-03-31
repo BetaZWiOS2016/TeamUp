@@ -34,6 +34,8 @@ class TeamAppController {
     }
     
     //MARK: - Custom Methods
+    
+    
     func fillGames(){
         if (self.games.count == 0){
             ref = Firebase(url:"https://kliefhamers.firebaseio.com/Games")
@@ -45,7 +47,6 @@ class TeamAppController {
   
                     if let dictionary = json.dictionary{
                         for (key, value) in dictionary{
-                            print(key, value)
                             var homeTeam:Team = Team()
                             var awayTeam:Team = Team()
                             for(str, waarde) in self.teams{
@@ -152,7 +153,6 @@ class TeamAppController {
             print("Games array is not empty")
             
         }
-          print(self.players)
     }
     
     

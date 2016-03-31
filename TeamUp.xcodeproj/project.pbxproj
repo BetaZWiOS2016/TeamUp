@@ -194,7 +194,6 @@
 		072DA0F21C9C5F5200E2BBC7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				07178E881C9C54A800F7A994 /* LoginViewController.swift */,
 				07C0CA5E1CAAB17F0078D24B /* MainUIPageViewController.swift */,
 				07C0CA601CAAB2ED0078D24B /* NextGameViewController.swift */,
 				07C0CA621CAAB31F0078D24B /* GamesViewController.swift */,
@@ -204,6 +203,7 @@
 				07C0CA6A1CAAB3F80078D24B /* HomePageWebViewController.swift */,
 				07C0CA6C1CAAB5560078D24B /* PlayerProfileViewController.swift */,
 				07614E4A1CABD1A900A3CE1F /* SelectedGameViewController.swift */,
+				07178E881C9C54A800F7A994 /* LoginViewController.swift */,
 				073A57521CAC0AEF00759E3B /* GameTableViewCell.swift */,
 				073A57541CAC0B1800759E3B /* PlayerTableViewCell.swift */,
 				073A57561CAC0B6D00759E3B /* TrainingTableViewCell.swift */,

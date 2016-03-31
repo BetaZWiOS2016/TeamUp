@@ -16,7 +16,9 @@ class LoginViewController: UIViewController {
 
     
     //MARK: - IBOutlets
-    
+    @IBOutlet weak var usernameLbl: UITextField!
+    @IBOutlet weak var passwordLbl: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {

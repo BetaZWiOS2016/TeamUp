@@ -47,4 +47,9 @@ class Game {
     init(){}
     
     
+    //MARK: - Custom Methods
+    func description()->String{
+        return " \(self.homeTeam)  vs \(self.awayTeam) +  at \(self.matchDay)"
+    }
+    
 }

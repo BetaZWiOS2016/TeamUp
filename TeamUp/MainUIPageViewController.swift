@@ -30,6 +30,8 @@ class MainUIPageViewController: UIViewController {
         TeamAppController.sharedInstance.fillPlayers()
         TeamAppController.sharedInstance.fillTrainings()
         TeamAppController.sharedInstance.fillGames()
+        print("Games")
+        print(TeamAppController.sharedInstance.games)
         
     
         // Create variables for all view controllers you want to put in the
@@ -64,7 +66,7 @@ class MainUIPageViewController: UIViewController {
         
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
-        var parameters: [CAPSPageMenuOption] = [
+        let parameters: [CAPSPageMenuOption] = [
             .MenuItemSeparatorWidth(1),
             .UseMenuLikeSegmentedControl(false),
             .MenuItemSeparatorPercentageHeight(0.5)
