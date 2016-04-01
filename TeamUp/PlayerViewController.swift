@@ -10,6 +10,10 @@ import UIKit
 
 class PlayerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
+    //MARK: - Attributes
+    var arr = [Player]()
+    
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,6 +21,9 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        for (_, value) in TeamAppController.sharedInstance.players {
+            arr.append(value)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -33,26 +40,32 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell")! as! PlayerTableViewCell
-        cell.configureCell()
+        cell.configureCell(arr[indexPath.row])
         return cell
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arr.count
     }
 
     
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "showPlayerSegue"){
+            let playerProfileVC = segue.destinationViewController as! PlayerProfileViewController
+            if let playerCell = sender as? PlayerTableViewCell{
+                playerProfileVC.selectedPlayer = playerCell.selectedPlayer
+            }
+        }
+        
+       
     }
-    */
+    
 
 }

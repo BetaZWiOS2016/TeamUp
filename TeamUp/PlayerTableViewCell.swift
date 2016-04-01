@@ -10,6 +10,10 @@ import UIKit
 
 class PlayerTableViewCell: UITableViewCell {
 
+    
+    //MARK: - Attributes
+    var selectedPlayer:Player?
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var profilePic: UIImageView!
@@ -30,9 +34,9 @@ class PlayerTableViewCell: UITableViewCell {
     
     
     //MARK: - Custom Methods
-    func configureCell(){
-        self.profilePic.image = UIImage (named: "ThumbnailLogo")
-        self.lNameLbl.text = "Van Gestel"
-        self.fNameLbl.text = "Jens"
+    func configureCell(player:Player){
+        self.selectedPlayer = player
+        self.lNameLbl.text = player.lName
+        self.fNameLbl.text = player.fName
     }
 }

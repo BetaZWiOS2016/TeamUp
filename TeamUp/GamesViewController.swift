@@ -11,6 +11,9 @@ import UIKit
 class GamesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     
+    //MARK: - Attributes
+    var arr = [Game]()
+    
     //MARK: - IBOutlets
     
   
@@ -22,6 +25,11 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+       
+        
+        for (_, value) in TeamAppController.sharedInstance.games {
+            arr.append(value)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -38,24 +46,26 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("GameCell")! as! GameTableViewCell
-        //cell.configureCell()
+        
+        cell.configureCell(arr[indexPath.row])
         return cell
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arr.count
     }
     
 
+    
   
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "showGameSegue"){
                 let selectedGameVC = segue.destinationViewController as! SelectedGameViewController
-                if let game = sender as? Game{
-                    selectedGameVC.selectedGame = game
+                if let gameCell = sender as? GameTableViewCell{
+                    selectedGameVC.selectedGame = gameCell.currentGame
                 }
         }
     }

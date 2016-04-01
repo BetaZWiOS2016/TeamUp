@@ -12,6 +12,8 @@ import SwiftyJSON
 
 class TeamAppController {
 
+    
+    static let gamesFilledNotification = "be.teamup.gamesfilled"
     static let sharedInstance = TeamAppController()
     
     private(set) var userLogged: Player?
@@ -35,8 +37,17 @@ class TeamAppController {
     
     //MARK: - Custom Methods
     
+    func fetchAllModels(){
+        fillTeams()
+        /*
+        TeamAppController.sharedInstance.fillTeams()
+        TeamAppController.sharedInstance.fillPlayers()
+        TeamAppController.sharedInstance.fillTrainings()
+        TeamAppController.sharedInstance.fillGames()
+*/
+    }
     
-    func fillGames(){
+    private func fillGames(){
         if (self.games.count == 0){
             ref = Firebase(url:"https://kliefhamers.firebaseio.com/Games")
             ref!.observeEventType(.Value, withBlock: { snapshot in
@@ -64,7 +75,8 @@ class TeamAppController {
                             self.games[key] = Game(homeTeam: homeTeam, awayTeam: awayTeam, homeTeamScore: value["HomeTeamScore"].intValue, awayTeamScore: value["AwayTeamScore"].intValue, addressPitch: homeTeam.addressPitch!, addressBar: homeTeam.addressBar!, pitchTime: value["pitchTime"].description , wpTime: value["wpTime"].description, kickOffTime: homeTeam.kickOffTime!, matchDay: self.stringToDate(value["matchDay"].description))
                             
                         }
-
+                        print(self.games)
+                        NSNotificationCenter.defaultCenter().postNotificationName(TeamAppController.gamesFilledNotification, object: nil, userInfo: nil)
                     }
                                         //self.games = snapshot.value as! [String : Game]
                 }
@@ -104,7 +116,7 @@ class TeamAppController {
                     }
                     //self.games = snapshot.value as! [String : Game]
                 }
-                
+                self.fillPlayers()
                 }, withCancelBlock: { error in
                     print(error.description)
                     
@@ -140,7 +152,7 @@ class TeamAppController {
                     }
                    
                 }
-                
+                self.fillTrainings()
                 }, withCancelBlock: { error in
                     print(error.description)
                     
@@ -176,7 +188,7 @@ class TeamAppController {
                     }
                     //self.games = snapshot.value as! [String : Game]
                 }
-                
+                self.fillGames()
                 }, withCancelBlock: { error in
                     print(error.description)
                     

@@ -26,10 +26,7 @@ class MainUIPageViewController: UIViewController {
         super.viewDidLoad()
         var controllerArray : [UIViewController] = []
         
-        TeamAppController.sharedInstance.fillTeams()
-        TeamAppController.sharedInstance.fillPlayers()
-        TeamAppController.sharedInstance.fillTrainings()
-        TeamAppController.sharedInstance.fillGames()
+        TeamAppController.sharedInstance.fetchAllModels()
         print("Games")
         print(TeamAppController.sharedInstance.games)
         

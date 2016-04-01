@@ -11,11 +11,20 @@ import UIKit
 class SelectedGameViewController: UIViewController {
 
     //MARK: - Attributes
-    var selectedGame:Game?
+    var selectedGame:Game?{
+        didSet{
+            if let selectedGame = selectedGame{
+                let _ = self.view
+                configureViews(selectedGame)
+            }
+            
+        }
+    }
     
     
     //MARK: - IBOutlets
     
+    @IBOutlet weak var closeBtn: UIButton!
     @IBOutlet weak var dateTimeLbl: UILabel!
     @IBOutlet weak var homeTeamNameLbl: UILabel!
     @IBOutlet weak var awayTeamNameLbl: UILabel!
@@ -23,21 +32,22 @@ class SelectedGameViewController: UIViewController {
     @IBOutlet weak var awayTeamImage: UIImageView!
     @IBOutlet weak var homeTeamScoreLbl: UILabel!
     @IBOutlet weak var awayTeamScoreLbl: UILabel!
-    @IBOutlet weak var aanwezigBtn: UIButton!
-    @IBOutlet weak var spelersBtn: UIButton!
-    @IBOutlet weak var uurAftrapLbl: UILabel!
-    @IBOutlet weak var uurVeldLbl: UILabel!
-    @IBOutlet weak var uurWPLbl: UILabel!
     @IBOutlet weak var naamVeldLbl: UILabel!
     @IBOutlet weak var adresVeldLbl: UILabel!
-    @IBOutlet weak var naamCafeLbl: UILabel!
     @IBOutlet weak var adresCafeLbl: UILabel!
+    @IBOutlet weak var naamCafeLbl: UILabel!
+    @IBOutlet weak var uurWPLbl: UILabel!
+    @IBOutlet weak var uurVeldLbl: UILabel!
+    @IBOutlet weak var uurAftrapLbl: UILabel!
+    @IBOutlet weak var spelersBtn: UIButton!
+    @IBOutlet weak var aanwezigBtn: UIButton!
+
     
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -50,13 +60,33 @@ class SelectedGameViewController: UIViewController {
     
     //MARK: - Custom Methods
     func configureViews(game:Game){
-        dateTimeLbl.text = "\(game.matchDay!.description) - \(game.kickOffTime)"
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        let dateString = dateFormatter.stringFromDate(game.matchDay ?? NSDate())
+    
+        dateTimeLbl.text = "\(dateString) - \(game.kickOffTime)"
         homeTeamNameLbl.text = game.homeTeam?.name
         awayTeamNameLbl.text = game.awayTeam?.name
-        homeTeamImage.image = UIImage(named: game.homeTeam!.image!)
-        awayTeamImage.image = UIImage(named: (game.awayTeam?.image)!)
-        homeTeamScoreLbl.text = game.homeTeamScore?.description
-        awayTeamScoreLbl.text = game.awayTeamScore?.description
+        if(game.homeTeamScore==99){
+            
+        }
+        else{
+            homeTeamScoreLbl.text = game.homeTeamScore?.description
+            awayTeamScoreLbl.text = game.awayTeamScore?.description
+        }
+        
+        if(game.homeTeam?.name == "Kliefhamers"){
+            homeTeamImage.image = UIImage(named: "KliefhamersLogo")
+            awayTeamImage.image = UIImage(named: "AwayTeamLogo")
+        }
+        else{
+            homeTeamImage.image = UIImage(named: "AwayTeamLogo")
+            awayTeamImage.image = UIImage(named: "KliefhamersLogo")
+        }
+
+        
         uurAftrapLbl.text = game.kickOffTime
         uurVeldLbl.text = game.pitchTime
         uurWPLbl.text = game.wpTime
@@ -66,6 +96,13 @@ class SelectedGameViewController: UIViewController {
         adresCafeLbl.text = game.homeTeam?.addressBar
     }
     
+    
+    
+    //MARK: - IBActions
+    
+    @IBAction func closeView(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     

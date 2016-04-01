@@ -23,7 +23,7 @@ class GameTableViewCell: UITableViewCell {
     
     //Mark: - Override methods
     
-    
+    var currentGame: Game?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,13 +39,33 @@ class GameTableViewCell: UITableViewCell {
     
     //MARK: - Custom Methods
     func configureCell(game:Game){
-        self.dateLbl.text = game.matchDay?.description
+        self.currentGame = game
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        let dateString = dateFormatter.stringFromDate(game.matchDay ?? NSDate())
+        self.dateLbl.text = dateString
+
         self.homeTeamLbl.text = game.homeTeam?.name
         self.awayTeamLbl.text = game.awayTeam?.name
-        self.homeTeamScoreLbl.text = game.homeTeamScore?.description
-        self.awayTeamScoreLbl.text = game.awayTeamScore?.description
-        self.homeTeamImage.image = UIImage(named: (game.homeTeam?.image)!)
-        self.awayTeamImage.image = UIImage(named: (game.awayTeam?.image)!)
+        if(game.homeTeamScore==99){
+            
+        }
+        else{
+            homeTeamScoreLbl.text = game.homeTeamScore?.description
+            awayTeamScoreLbl.text = game.awayTeamScore?.description
+        }
+        
+        if(game.homeTeam?.name == "Kliefhamers"){
+            homeTeamImage.image = UIImage(named: "KliefhamersLogo")
+            awayTeamImage.image = UIImage(named: "AwayTeamLogo")
+        }
+        else{
+            homeTeamImage.image = UIImage(named: "AwayTeamLogo")
+            awayTeamImage.image = UIImage(named: "KliefhamersLogo")
+        }
+        
+    
         
     }
 
